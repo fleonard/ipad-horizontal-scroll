@@ -1,0 +1,66 @@
+*, :after, :before{
+  box-sizing: border-box;
+}
+.Container{
+  overflow: hidden;
+  position:relative;
+}
+
+.scrollWrapper{
+  overflow: hidden;
+  overflow-x: auto;
+  margin-left: 450px;
+}
+table{
+  border-collapse: separate;
+  min-width: 100%;
+  border-spacing: 0;
+}
+.headerRow th{
+  height: 36px;
+  white-space: nowrap;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #000;
+  background-color: #dedede;
+  position: relative;
+  min-width: 150px;
+  padding-left: 20px;
+}
+.headerRow .headerRow-first{
+  position: absolute;
+  left: 0;
+  width: 150px;
+}
+.headerRow .headerRow-second{
+  position: absolute;
+  left: 150px;
+  width: 300px;
+}
+.resultsRow td{
+  font-size: 10px;
+  text-align: left;
+  min-width: 150px;
+  height: 118px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+.resultsRow .resultsRow-first{
+  position: absolute;
+  left: 0;
+  width: 150px;
+}
+.resultsRow .resultsRow-second{
+  position: absolute;
+  left: 150px;
+  width: 300px;
+  border-right: 1px solid #dedede;
+}
+.resultsRow:nth-child(even) td{
+  background: #eee;
+}
